@@ -13,18 +13,18 @@ class MCC(ThreeDScene):
         self.wait(1)
         self.play(FadeOut(title))
 
-        vettore_scarti=[-0.33,-0.392,-0.457] #adapt the e-void from the file
+        residuals=[-0.33,-0.392,-0.457] #adapt the e-void from the file
 
 
         def load_data(file):
             data = pd.read_csv(file, sep=r"\s+", engine="python")
             e = data['statev(1)'] #void-index
             if file=="CD_MCC_OCR1.out":
-                e = e  + vettore_scarti[0]
+                e = e  + residuals[0]
             if file=="CD_MCC_OCR2.out":
-                e = e + vettore_scarti[1]
+                e = e + residuals[1]
             if file == "CD_MCC_OCR4.out":
-                e = e + vettore_scarti[2]
+                e = e + residuals[2]
 
             s11 = -data['stress(1)']
             s22 = -data['stress(2)']
