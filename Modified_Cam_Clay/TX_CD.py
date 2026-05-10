@@ -20,13 +20,10 @@ class MCC(ThreeDScene):
             data = pd.read_csv(file, sep=r"\s+", engine="python")
             e = data['statev(1)'] #void-index
             if file=="CD_MCC_OCR1.out":
-                i=0
                 e = e  + vettore_scarti[0]
             if file=="CD_MCC_OCR2.out":
-                i = 1
                 e = e + vettore_scarti[1]
             if file == "CD_MCC_OCR4.out":
-                i = 1
                 e = e + vettore_scarti[2]
 
             s11 = -data['stress(1)']
