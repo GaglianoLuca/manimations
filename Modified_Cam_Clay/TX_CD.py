@@ -7,7 +7,7 @@ from manim.utils.rate_functions import ease_in_sine
 class MCC(ThreeDScene):
     def construct(self):
 
-        title = Tex("MCC: Triaxial-CD load path new", font_size=48)
+        title = Tex("MCC: Triaxial-CD load path", font_size=48)
         self.play(Write(title))
         self.wait(1)
         self.play(FadeOut(title))
