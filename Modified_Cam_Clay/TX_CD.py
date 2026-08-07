@@ -142,7 +142,7 @@ class MCC(ThreeDScene):
             color = colors[dataset_idx % len(colors_e)]
             return MathTex(
                 r"\left[ e, p^{\prime}, q \right] = "
-                f"[{e[idx]:.2f}, {p[idx]:.2f}, {q[idx]:.2f}]",
+                f"[{e[idx]:.3f}, {p[idx]:.1f}, {q[idx]:.1f}]",
                 color=color,
                 font_size=30,
             ).to_corner(UL).shift(DOWN * dataset_idx * 0.5)
