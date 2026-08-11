@@ -1,1 +1,3 @@
 #work in progress
+launch animation with command: python3 -m manim -p --renderer=opengl sanisand.py SANISAND
+or similar if using venv / uv / conda ....
