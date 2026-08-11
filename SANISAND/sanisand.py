@@ -819,7 +819,7 @@ class SANISAND(ThreeDScene):
 
             if mode == "sim":
                 text = (
-                    f"tutti ({len(ds_labels)}) --- "
+                    f"all ({len(ds_labels)}) --- "
                     + ds_labels[ds].replace("_", r"\_")
                 )
             else:
